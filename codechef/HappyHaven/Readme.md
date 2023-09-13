@@ -19,4 +19,39 @@ Now, let's explore some objective questions related to Subqueries and the given 
 
 Get ready to sub-query like a pro!
 
+Which of the following statements about subqueries is true?
+= Subqueries can be used in various parts of a SQL statement.
+= A subquery is also called a nested query or an inner query
+
+What is the purpose of a subquery?
+= To filter or retrieve data based on a condition.
+
+In which clause is a subquery typically used?
+= WHERE clause
+
+Which type of subquery is executed once for the entire outer query?
+= Scalar subquery
+
+Which keyword is used to compare a subquery result with a column value in the outer query?
+= IN
+
+Which type of subquery can reference columns from the outer query?
+= Correlated subquery
+
+What is the maximum number of subqueries that can be nested in a single SQL statement?
+= There is no specific limit.
+
+Which of the following is not a valid use case for subqueries?
+= Inserting data into a table.
+
+Retrieve the names and user IDs of users who have not made any bookings in the HappyHaven Home Rental App.
+= SELECT user_id, name
+FROM Users
+WHERE user_id NOT IN (
+SELECT DISTINCT user_id
+FROM Bookings
+);
+
+
+
 Link: [Aggregates and group by](https://www.codechef.com/practice/SQLPRAC05/problems/SQLP41?tab=statement)

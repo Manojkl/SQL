@@ -1,3 +1,1 @@
-SELECT DISTINCT STATION.CITY
-FROM STATION
-WHERE STATION.ID%2 = 0;
+select (count(city)- count(distinct(city))) as ans from station;
